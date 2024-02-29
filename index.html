@@ -41,6 +41,8 @@
         <hr />
         <button>Test</button>
 
+        <button onclick="count()">Test function</button>
+
         <hr />
         <input type="button" value="Button from input">
         <hr />
@@ -93,6 +95,7 @@
         <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis non iste minus eligendi sapiente doloremque! Tempore quisquam, nisi eveniet nesciunt repellendus, odit autem a dolorum accusantium dolor quae inventore itaque?
         </p>
+        <hr />
         <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet ut id sequi, maxime deserunt voluptatibus obcaecati assumenda? A, eaque nostrum fuga, perferendis, alias numquam nulla laborum cupiditate dolore repellendus ullam.
         </p>
@@ -102,6 +105,22 @@
         Copyright &copy; 2024
     </footer>
 
+    <script>
+        console.log("Salut din consola!")
+    
+        let counter = 0;
+        function count(){
+            counter++;
+            console.log("Salutare din functie.", counter);
+        }
+    </script>
+
+    <!-- Adaugare fisiere externe de JS -->
+    <script src="script.js"></script>
+    <!-- Adaugare fisiere externe JS module type -->
+    <script type="module">
+    import {count} from "./script-module-way.js"
+    </script>
 
     <!--Adaugare fisiere externe de JS-->
     <script src="script.js"></script>
